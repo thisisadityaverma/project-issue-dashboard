@@ -1,0 +1,112 @@
+{
+  "issues": [
+    {
+      "id": "ISS-101",
+      "title": "Login fails on Safari when SSO is enabled",
+      "description": "Users on Safari 17 are sent back to the sign-in page after finishing the SSO handshake. Third-party cookie partitioning appears to drop the session cookie.",
+      "status": "Open",
+      "priority": "High",
+      "assignee": "Priya Sharma",
+      "createdAt": "2026-09-24T09:15:00Z"
+    },
+    {
+      "id": "ISS-102",
+      "title": "Dashboard charts flicker on window resize",
+      "description": "The revenue and usage charts re-render several times while the browser window is being resized, which causes a visible flicker on low-powered laptops.",
+      "status": "In Progress",
+      "priority": "Medium",
+      "assignee": "Marcus Lee",
+      "createdAt": "2026-09-21T14:40:00Z"
+    },
+    {
+      "id": "ISS-103",
+      "title": "CSV export truncates reports beyond 10,000 rows",
+      "description": "Exporting a large report silently stops at 10,000 rows with no warning. Expected behaviour is to stream the full dataset or tell the user the export is partial.",
+      "status": "Open",
+      "priority": "High",
+      "assignee": "Amara Okafor",
+      "createdAt": "2026-09-18T11:05:00Z"
+    },
+    {
+      "id": "ISS-104",
+      "title": "Add a dark mode toggle to the settings page",
+      "description": "Several customers have asked for a persistent dark mode preference. The toggle should follow the OS setting by default and remember the user's choice.",
+      "status": "Open",
+      "priority": "Low",
+      "assignee": "Daniel Kim",
+      "createdAt": "2026-09-12T08:30:00Z"
+    },
+    {
+      "id": "ISS-105",
+      "title": "Password reset email arrives after 15 minutes",
+      "description": "Transactional emails are queued behind marketing sends. Reset links expire after 10 minutes, so many users can never complete the flow.",
+      "status": "In Progress",
+      "priority": "High",
+      "assignee": "Sofia Rossi",
+      "createdAt": "2026-09-09T16:20:00Z"
+    },
+    {
+      "id": "ISS-106",
+      "title": "Typo in the onboarding checklist tooltip",
+      "description": "The tooltip on step 3 reads “Invte teammates”. A simple copy fix that needs to land in every supported locale.",
+      "status": "Resolved",
+      "priority": "Low",
+      "assignee": "Daniel Kim",
+      "createdAt": "2026-09-02T10:00:00Z"
+    },
+    {
+      "id": "ISS-107",
+      "title": "Notification badge count is out of sync",
+      "description": "After marking all notifications as read on mobile, the desktop badge still shows the old unread count until the page is refreshed manually.",
+      "status": "In Progress",
+      "priority": "Medium",
+      "assignee": "Marcus Lee",
+      "createdAt": "2026-08-30T13:45:00Z"
+    },
+    {
+      "id": "ISS-108",
+      "title": "Rate limiter blocks legitimate API bursts",
+      "description": "Partners running nightly syncs hit 429 responses even though they stay under the documented quota. The sliding-window calculation needs a review.",
+      "status": "Open",
+      "priority": "Medium",
+      "assignee": "Priya Sharma",
+      "createdAt": "2026-08-26T07:50:00Z"
+    },
+    {
+      "id": "ISS-109",
+      "title": "Search index misses newly created projects",
+      "description": "Projects created within the last hour do not appear in global search. The indexing worker seems to lag behind under load.",
+      "status": "Resolved",
+      "priority": "High",
+      "assignee": "Amara Okafor",
+      "createdAt": "2026-08-22T15:10:00Z"
+    },
+    {
+      "id": "ISS-110",
+      "title": "Improve keyboard navigation in data tables",
+      "description": "Arrow-key navigation between cells is inconsistent and focus is lost after sorting a column. Needs an audit against the WAI-ARIA grid pattern.",
+      "status": "Open",
+      "priority": "Medium",
+      "assignee": "Sofia Rossi",
+      "createdAt": "2026-08-19T12:25:00Z"
+    },
+    {
+      "id": "ISS-111",
+      "title": "Avatar upload rejects valid PNG files",
+      "description": "PNG images with an embedded colour profile fail validation with a generic error message. Files up to 5 MB should be accepted.",
+      "status": "Resolved",
+      "priority": "Low",
+      "assignee": "Liam Novak",
+      "createdAt": "2026-08-14T09:00:00Z"
+    },
+    {
+      "id": "ISS-112",
+      "title": "Billing page shows the wrong currency for EU accounts",
+      "description": "Invoices for Eurozone accounts are displayed with a USD symbol although they are charged in EUR. Only the summary card is affected, not the PDF.",
+      "status": "In Progress",
+      "priority": "High",
+      "assignee": "Liam Novak",
+      "createdAt": "2026-08-08T17:35:00Z"
+    }
+  ]
+}
